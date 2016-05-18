@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>Gabriel Borges</title>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu|Titillium+Web|Muli|Inconsolata|Bree+Serif|Exo+2|Catamaran' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<!-- Navbar -->
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+			<!-- Logo -->
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand" id="myNameHeader">Gabriel B Borges</a>			
+			</div>
+
+			<!-- Menu Items -->
+			<div>
+				<ul class="nav navbar-nav navbar-right" id="right_menu_items">
+					<li><a href="index.html">About</a></li>
+					<li class="active"><a href="projects.html">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<div class="container" id="sw_tower_defense">
+		<div class="row">
+			
+			<div class="col-md-8">
+				<h2>SWTowerDefense</h2>
+					<p>SWTowerDefense was a game that I primarily designed as a project for my Software Engineering class at UConn. The main point of the game was a Star Wars themed tower-defense game. The core game logic is very similar to most tower defense games, with the main difference being the lack of "waves," in lieu of a never-ending wave of critters whose health increases over time. I was the primary "programmer" for the project, while my other three group members did most of the visual aspect, including menu and sprite design. All of the code was done in xCode with swift, using the Spritekit game engine. Although I initially tried to model the project on an existing Objective-C written tutorial, I found a lot of difficulties in keeping the consistency and essentially began to re-write it from scratch.</p>
+					<p>Although I used a game engine (which truthfully, does eliminate a TON of excess coding needed), one of the more difficult aspects was attempting to get the firing of the towers to be consistent. I was quite happy when I found a solution to this, using time markers to re-fire a tower based on a given member variable versus trying to take advantage of the built in "update" class (which caused the tower to fire every frame). For those curious to see more, the project source code can be viewed from my GitHub profile!</p>
+
+			</div>
+			
+			<div class="col-md-4">
+				<img src="Media/swTowerDefense.png" class="img-responsive" style="padding-top: 10px;">
+				<img src="Media/swTowerDefenseRunning.png" class="img-responsive" style="padding-top: 10px;">	
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-8">
+				<h2>Programmed Algorithms</h2>
+					<p>As a result of being an undergraduate student, I've had to code a lot of "algorithm" projects. The source code and analysis write-up for the two described below can also be found on my GitHub profile.</p>
+					<h4 style="font-weight: bold">Python Dynamic Programming Algorithm</h4>
+						<p>The goal of this assignment was to write a program that runs the LCS (Longest Common Subsequence) algorithm. LCS is a well known Dynamic Programming algorithm which finds, between two strings, the longest possible sub-string that exists in both strings. Although the assignment could have been written in any language, I chose to use this assignment as an oppertunity to learn Python. One of the nice things about Python (over say, Java) was the code to handle file input was significantly more concise. This allowed to me to focus on the actual code. The point was to use this LCS algorithm to analyze a file of sequences that were generated from a pre-determined sequence (i.e. CFGD) with a given range of error. Files with low error would see the sequence CFGD repeated continously with low error. High error would make it difficult to see the sequence. The analysis was to answer several questions based on the difference of LCS between the files with high error and those with low error. The results were such that the files with a high amount of error had a smaller LCS than those with low error. </p>
+					<h4 style="font-weight: bold">Java Divide/Conquer Algorithm</h4>
+						<p>In this assignment, we were asked to write two algorithms to analyze whether there existed two numbers in a given list that would add to a third given number. For example, in the list 4, 5, 10, 7, 2, 9, is there two numbers that add to 9? (Yes, 4 and 5). One algorithm would check the list using a brute-force approach: checking every possible combinations of numbers with a runtime of O(n^2). The second algorithm would first sort the list, and then check possible combinations using binary search with a runtime of O(nlogn). The analysis was to determine how much more efficient the binary search algorithm was over the brute force algorithm. The results were rather astonishing, with the binary search approach, in large lists, at times being faster than the brute-force approach by several hours.</p>
+			</div>
+			
+			<div class="col-md-4">
+				<img src="Media/lcsPython.png" class="img-responsive" style="padding-top: 60px;">
+				<img src="Media/javaDCAlgo.png" class="img-responsive" style="padding-top: 10px;">
+			</div>
+			
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+	<footer class="footer">
+    	<div class="container-fluid">
+      		<p class="text-muted">Connect</p>
+      	</div>
+		<div class="pull-right" id="social_icons">
+			
+		</div>
+    </footer>
+
+</body>
+</html>
