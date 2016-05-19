@@ -35,6 +35,7 @@ body {
   font-size: 60px;
   padding-top: 20px;
   padding-bottom: 40px;
+  marker-offset: 10px;
 }
 
 #my_picture {
