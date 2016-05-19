@@ -32,7 +32,8 @@ body {
 -------------------------------------------------- */
 
 #myNameHeader {
-  font-size: 4.0em;
+  display: inline;
+  font-size: 60px;
   padding-top:20px;
   padding-bottom: 40px;
 }
