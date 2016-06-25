@@ -28,14 +28,7 @@ body {
   min-height: 80px;
 }
 
-@media (min-width: @screen-sm-min) { 
-    #myNameHeader {
-    font-size: 25px;
-    padding-top:20px;
-    padding-bottom: 40px;
-    position: relative;
-  }
-}
+
 
 #myNameHeader {
   font-size: 60px;
@@ -51,4 +44,16 @@ body {
 
 #my_picture {
   padding-top: 25px;
+}
+
+@media (max-width: 768px) { 
+    #myNameHeader {
+    font-size: 40px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  #right_menu_items {
+    padding-right: 0px;
+  }
 }
