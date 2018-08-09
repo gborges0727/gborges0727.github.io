@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import AboutMe from '../components/aboutMe';
 
 const styles = () => ({
   root: {
@@ -32,11 +33,11 @@ class HomePage extends React.Component {
     const { classes } = this.props;
     return (
       <Grid container className={classes.container} spacing={24}>
-        <Grid item className={`${classes.imageBox} ${classes.gridItem}`} xs={5}>
+        <Grid item className={`${classes.imageBox} ${classes.gridItem}`} spacing={20}>
           <div>My Image Here</div>
         </Grid>
         <Grid item className={`${classes.bioText} ${classes.gridItem}`} xs={7}>
-          <div>Short Bio Here</div>
+          <AboutMe />
         </Grid>
         <Grid item className={classes.gridItem} xs={12}>
           <div>More Information</div>
