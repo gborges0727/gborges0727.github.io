@@ -33,36 +33,32 @@ const styles = theme => ({
   }
 });
 
-class HomePage extends React.Component {
-  static propTypes = {
-    classes: PropTypes.object.isRequired,
-  };
-
-  render() {
-    const { classes } = this.props;
-    console.log(classes);
-    return (
-      <div>
-        <div className={classes.container}>
-          <Grid container justify='flex-start'>
-            <Grid item className={classes.imageBox}>
-              <img className={classes.image} src={require('../../images/Me.jpg')} />
-            </Grid>
-            <Grid item className={classes.gridItem} xs>
-              <AboutMe className={classes.bioText} />
-            </Grid>
+const HomePage = ({classes}) => {
+  return (
+    <div>
+      <div className={classes.container}>
+        <Grid container justify='flex-start'>
+          <Grid item className={classes.imageBox}>
+            <img className={classes.image} src={require('../../images/Me.jpg')} />
           </Grid>
-        </div>
-        <div className={classes.container}>
-          <Grid container justify='center'>
-            <Grid item className={classes.gridItem} xs>
-              <Summary className={classes.moreInfo}></Summary>
-            </Grid>
+          <Grid item className={classes.gridItem} xs>
+            <AboutMe className={classes.bioText} />
           </Grid>
-        </div>
+        </Grid>
       </div>
-    );
-  };
+      <div className={classes.container}>
+        <Grid container justify='center'>
+          <Grid item className={classes.gridItem} xs>
+            <Summary className={classes.moreInfo}></Summary>
+          </Grid>
+        </Grid>
+      </div>
+    </div>
+  );
+}
+
+HomePage.propTypes = {
+  classes: PropTypes.object.isRequired
 }
 
 export default withStyles(styles)(HomePage);
