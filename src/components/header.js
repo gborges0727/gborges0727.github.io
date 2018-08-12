@@ -32,7 +32,7 @@ const Header = ({classes}) => {
         </Typography>
         <Button color='inherit' href='https://github.com/gborges0727'>GitHub</Button>
         <Button color='inherit' href='https://www.linkedin.com/in/gabriel-borges-522ba910b/'>LinkedIn</Button>
-        <Button color='inherit' href='../../resources/Resume.pdf'>Resume</Button>
+        <Button color='inherit' href={require('../../resources/Resume.pdf')}>Resume</Button>
       </Toolbar>
     </AppBar>
   );
