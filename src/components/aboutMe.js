@@ -5,11 +5,22 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   container: {
-    padding: 10
+    padding: 10,
+    paddingTop: 0
   }, 
   textbody: {
     paddingTop: 10, 
     paddingRight: 150
+  },
+  '@media (max-width: 1400px)': {
+    textbody: {
+      paddingRight: 0
+    }
+  },
+  '@media (max-width: 1024px)': {
+    textbody: {
+      paddingRight: 0
+    }
   }
 }
 

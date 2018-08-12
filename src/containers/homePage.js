@@ -30,6 +30,12 @@ const styles = theme => ({
   gridItem: {
     //borderStyle: 'solid',
     padding: theme.spacing.unit * 2,
+  },
+  '@media (max-width: 1024px)': {
+    container: {
+      marginLeft: 10, 
+      marginRight: 10
+    }
   }
 });
 
@@ -39,7 +45,7 @@ const HomePage = ({classes}) => {
       <div className={classes.container}>
         <Grid container justify='flex-start'>
           <Grid item className={classes.imageBox}>
-            <img className={classes.image} src={require('../../images/Me.jpg')} />
+            <img className={classes.image} src={require('../../resources/images/Me.jpg')} />
           </Grid>
           <Grid item className={classes.gridItem} xs>
             <AboutMe className={classes.bioText} />
