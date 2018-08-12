@@ -28,7 +28,7 @@ const Header = ({classes}) => {
     <AppBar className={classes.appbar} position="static">
       <Toolbar>
         <Typography variant="title" color="inherit" className={classes.flex}>
-          Gabriel Borges
+          Gabe Borges
         </Typography>
         <Button color='inherit' href='https://github.com/gborges0727'>GitHub</Button>
         <Button color='inherit' href='https://www.linkedin.com/in/gabriel-borges-522ba910b/'>LinkedIn</Button>

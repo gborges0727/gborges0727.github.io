@@ -10,6 +10,13 @@ const styles = theme => ({
     flexGrow: 1,
     margin: 20
   },
+  image: {
+    //maxWidth: 360, 
+    width: '100%',
+    maxWidth: 360,
+    height: 'auto',
+
+  },
   container: {
     padding: 20,
     flexGrow: 1, 
@@ -17,15 +24,11 @@ const styles = theme => ({
     marginRight: 100
   }, 
   imageBox: {
-    height: 480, 
-    padding: 0
+    // height: 480, 
+    // padding: 0
   }, 
-  image: {
-    height: 480, 
-    width: 360,
-  },
   bioText: {
-    height: 480
+    // height: 480
   }, 
   gridItem: {
     //borderStyle: 'solid',
